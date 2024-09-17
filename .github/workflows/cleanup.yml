@@ -2,7 +2,7 @@ name: cleanup
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * 0'
 
 jobs:
   # removes all but 10 most recent workflow runs
@@ -31,7 +31,14 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v4
       - name: delete cache
-        run: gh cache delete --all
+        run: |
+          cl=$(gh cache list)
+          if [ -n "$cl" ]; then
+            echo "Cache exists, deleting..."
+            gh cache delete --all
+          else
+            echo "No cache found."
+          fi
         env:
           GH_TOKEN: ${{ github.token }}
 
