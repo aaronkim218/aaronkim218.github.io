@@ -1,6 +1,6 @@
 <div class="container">
-  <img src="/icecube.gif" alt="ice cube" />
-  <p>this page does not exist</p>
+  <img src="/lebron.webp" alt="lebron james" />
+  <p>under construction</p>
 </div>
 
 <style>
@@ -11,7 +11,7 @@
   }
 
   img {
-    width: 600px;
+    width: 700px;
     height: 400px;
     padding: 2rem;
   }

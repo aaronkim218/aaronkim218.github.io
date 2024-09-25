@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<nav>
+<nav class="">
   <div class="left">
     <ul>
       <li><a href="/about">about</a></li>
@@ -27,17 +27,35 @@
     position: sticky;
     top: 0;
     background-color: var(--background-color);
-    z-index: 1000;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 6.5s;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
   }
 
   nav::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    width: 0;
     height: 1px;
     background-color: #ffffff;
+    transform: translateX(-50%);
+    animation: expandBorder 1s ease forwards;
+    animation-delay: 6.5s;
+  }
+
+  @keyframes expandBorder {
+    to {
+      width: 100%;
+    }
   }
 
   ul {

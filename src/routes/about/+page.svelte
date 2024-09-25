@@ -1,6 +1,7 @@
 <div class="container">
-  <img src="/icecube.gif" alt="ice cube" />
-  <p>this page does not exist</p>
+  <img src="/headshot_extra_cropped.jpg" alt="aaron kim" />
+  <p>hello</p>
+  <p>under construction</p>
 </div>
 
 <style>
@@ -11,7 +12,7 @@
   }
 
   img {
-    width: 600px;
+    width: 300px;
     height: 400px;
     padding: 2rem;
   }
