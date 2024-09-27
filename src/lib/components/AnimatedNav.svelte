@@ -4,9 +4,9 @@
 <nav class="">
   <div class="left">
     <ul>
-      <li><a href="/about">about</a></li>
-      <li><a href="/projects">projects</a></li>
-      <li><a href="/other">other</a></li>
+      <li><a href="/about">about</a><span class="inactive-cursor">_</span></li>
+      <li><a href="/projects">projects</a><span class="inactive-cursor">_</span></li>
+      <li><a href="/other">other</a><span class="inactive-cursor">_</span></li>
     </ul>
   </div>
   <div class="right">
@@ -82,5 +82,10 @@
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
+  }
+
+  .inactive-cursor {
+    color: transparent;
+    font-size: 1.5rem;
   }
 </style>
