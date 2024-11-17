@@ -1,9 +1,4 @@
 <script lang="ts">
-  import { page } from '$app/stores';
-
-  let currentPath;
-  $: currentPath = $page.url.pathname;
-
   const leftLinks = [
     { name: 'about', path: '/about' },
     { name: 'projects', path: '/projects' },
@@ -16,9 +11,7 @@
     <ul>
       {#each leftLinks as link}
         <li>
-          <a href={link.path}>{link.name}</a><span
-            class={link.path === currentPath ? 'active-cursor' : 'inactive-cursor'}>_</span
-          >
+          <a href={link.path}>{link.name}</a>
         </li>
       {/each}
     </ul>
@@ -78,17 +71,6 @@
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
-  }
-
-  .active-cursor {
-    font-size: 1.5rem;
-    display: inline-block;
-    animation: blink 1s steps(1) infinite;
-  }
-
-  .inactive-cursor {
-    color: transparent;
-    font-size: 1.5rem;
   }
 
   @keyframes blink {

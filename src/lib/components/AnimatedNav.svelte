@@ -30,7 +30,6 @@
     overflow: hidden;
     opacity: 0;
     animation: fadeIn 1s ease forwards;
-    animation-delay: 6.5s;
   }
 
   @keyframes fadeIn {
@@ -49,7 +48,6 @@
     background-color: #ffffff;
     transform: translateX(-50%);
     animation: expandBorder 1s ease forwards;
-    animation-delay: 6.5s;
   }
 
   @keyframes expandBorder {
