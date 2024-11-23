@@ -1,5 +1,6 @@
 <script lang="ts">
   const leftLinks = [
+    { name: 'home', path: '/' },
     { name: 'about', path: '/about' },
     { name: 'projects', path: '/projects' },
     { name: 'other', path: '/other' }
@@ -71,16 +72,5 @@
     display: flex;
     justify-content: flex-end;
     flex-grow: 1;
-  }
-
-  @keyframes blink {
-    0%,
-    50% {
-      opacity: 1;
-    }
-    51%,
-    100% {
-      opacity: 0;
-    }
   }
 </style>

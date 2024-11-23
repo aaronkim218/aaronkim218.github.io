@@ -25,28 +25,20 @@
     display: flex;
     padding: 1rem;
     border: none;
-    /* border-radius: 10px; */
+    border: 1px solid #ffffff;
+    border-radius: 10px;
     cursor: pointer;
-    width: 50vw;
+    width: 45vw;
     height: 30vh;
     font-family: inherit;
     margin: 1rem;
     background-color: var(--secondary-color);
     transition: opacity 0.3s ease;
-    /* box-shadow: 0 0 10px var(--primary-color); */
-    /* box-shadow: 0 0 10px rgb(255, 0, 234); */
-    /* border: 10px solid rgba(255, 255, 255, 1); */
+    /* box-shadow: 0 0 10px #ffffff; */
   }
 
   .container:hover {
     opacity: 0.75;
-  }
-
-  @media (min-width: 1200px) {
-    .container {
-      width: 30vw;
-      height: 25vh;
-    }
   }
 
   .content {
