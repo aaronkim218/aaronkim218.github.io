@@ -1,6 +1,8 @@
 <script lang="ts">
   import ProjectCard from '$lib/components/ProjectCard.svelte';
   import type { Project } from '../../types';
+  import Icon from '@iconify/svelte';
+  import { fade } from 'svelte/transition';
 
   let projects: Project[] = [
     {
@@ -46,14 +48,38 @@
       date: '5/24 - 6/24'
     }
   ];
+
+  let i = 0;
 </script>
 
 <div class="content">
-  <div class="projects-container">
-    {#each projects as project}
-      <div class="project-container">
-        <ProjectCard {project} />
-      </div>
+  <div class="carousel-container">
+    <button
+      class="carousel-button"
+      on:click={() => (i === 0 ? (i = projects.length - 1) : (i -= 1))}
+    >
+      <Icon font-size={50} icon="radix-icons:double-arrow-left" />
+    </button>
+    <div class="project-container">
+      {#key i}
+        <div in:fade={{ duration: 1000 }}>
+          <ProjectCard project={projects[i]} />
+        </div>
+      {/key}
+    </div>
+    <button class="carousel-button" on:click={() => (i = (i + 1) % projects.length)}>
+      <Icon font-size={50} icon="radix-icons:double-arrow-right" />
+    </button>
+  </div>
+  <div class="carousel-dots-container">
+    {#each projects.keys() as j}
+      <button class="carousel-dot-button" on:click={() => (i = j)}>
+        <Icon
+          font-size={50}
+          color="#1bb21b"
+          icon={j === i ? 'radix-icons:dot-filled' : 'radix-icons:dot'}
+        />
+      </button>
     {/each}
   </div>
 </div>
@@ -63,23 +89,52 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    justify-content: center;
+    height: 80vh;
   }
 
-  .projects-container {
-    display: grid;
-    grid-template-columns: 1fr;
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  @media (min-width: 1200px) {
-    .projects-container {
-      grid-template-columns: repeat(2, 1fr);
-      padding-left: 10vh;
-      padding-right: 10vh;
-    }
+  .carousel-dots-container {
+    display: flex;
+    justify-content: center;
   }
 
   .project-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .carousel-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: opacity 0.3s ease;
+    transition: transform 0.1s ease;
+  }
+
+  .carousel-dot-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    transition: transform 0.1s ease;
+  }
+
+  .carousel-button:hover {
+    opacity: 0.75;
+    transform: scale(1.1);
+  }
+
+  .carousel-dot-button:hover {
+    opacity: 0.75;
+    transform: scale(1.1);
   }
 </style>
