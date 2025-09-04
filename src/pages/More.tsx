@@ -13,10 +13,12 @@ export default function More() {
             src="https://widget.deezer.com/widget/dark/track/82265248"
             width="100%"
             height="300"
-            frameborder="0"
-            allowtransparency="true"
+            {...({
+              frameborder: "0",
+              allowtransparency: "true",
+            } as any)}
             allow="encrypted-media; clipboard-write"
-          ></iframe>
+          />
         </div>
       </div>
     </ThemeProvider>
