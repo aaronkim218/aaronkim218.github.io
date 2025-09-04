@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { ModeToggle } from "../components/mode-toggle";
 import {
   Card,
   CardContent,
@@ -67,6 +66,7 @@ export default function Portfolio() {
     },
   ];
 
+
   useEffect(() => {
     const getVisibleArea = (rect: DOMRect) => {
       const viewportHeight = window.innerHeight;
@@ -108,7 +108,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex relative">
       <div className="fixed left-0 top-0 w-1/2 h-screen p-16 flex flex-col justify-between">
         <div>
           <div className="mb-16">
@@ -168,10 +168,6 @@ export default function Portfolio() {
           >
             <Mail size={24} />
           </a>
-        </div>
-
-        <div className="absolute top-4 right-4">
-          <ModeToggle />
         </div>
       </div>
 
