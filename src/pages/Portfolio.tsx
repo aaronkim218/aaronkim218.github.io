@@ -108,7 +108,7 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
+    <div className="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto relative">
       <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col lg:justify-between gap-6 lg:sticky lg:top-0 lg:h-screen">
         <div className="flex flex-col gap-6 items-center lg:items-start">
           {/* Profile Picture */}
@@ -187,7 +187,7 @@ export default function Portfolio() {
         </div>
       </div>
 
-      <div className="w-full lg:w-1/2 p-8 lg:p-16 space-y-16 lg:space-y-32">
+      <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col gap-16 lg:gap-32">
         <section id="about">
           <h3 className="text-sm uppercase tracking-widest text-muted-foreground mb-8 sticky top-0 bg-background py-4">
             About
@@ -206,10 +206,7 @@ export default function Portfolio() {
           </h3>
           <div className="space-y-8">
             {experiences.map((exp, index) => (
-              <Card
-                key={index}
-                className="hover:shadow-lg transition-shadow"
-              >
+              <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -248,10 +245,7 @@ export default function Portfolio() {
           </h3>
           <div className="space-y-8">
             {projects.map((project, index) => (
-              <Card
-                key={index}
-                className="hover:shadow-lg transition-shadow"
-              >
+              <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-2">
                     {project.title}
