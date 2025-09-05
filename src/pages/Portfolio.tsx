@@ -8,6 +8,7 @@ import {
 import { Badge } from "../components/ui/badge";
 import { ExternalLink, Github, Linkedin, Mail } from "lucide-react";
 import { Link } from "react-router";
+import headshot from "../assets/headshot.png";
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("about");
@@ -66,7 +67,6 @@ export default function Portfolio() {
     },
   ];
 
-
   useEffect(() => {
     const getVisibleArea = (rect: DOMRect) => {
       const viewportHeight = window.innerHeight;
@@ -108,48 +108,64 @@ export default function Portfolio() {
   };
 
   return (
-    <div className="min-h-screen flex relative">
-      <div className="fixed left-0 top-0 w-1/2 h-screen p-16 flex flex-col justify-between">
-        <div>
-          <div className="mb-16">
+    <div className="min-h-screen flex flex-col lg:flex-row max-w-7xl mx-auto">
+      <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col lg:justify-between gap-6 lg:sticky lg:top-0 lg:h-screen">
+        <div className="flex flex-col gap-6 items-center lg:items-start">
+          {/* Profile Picture */}
+          <div className="relative w-32 h-32 rounded-full overflow-hidden">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-slate-800/20 to-slate-900/40 backdrop-blur-sm border border-slate-600/30"></div>
+            <div className="absolute inset-2 rounded-full overflow-hidden">
+              <img
+                src={headshot}
+                alt="Aaron Kim"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-t from-transparent via-transparent to-white/5"></div>
+          </div>
+
+          {/* Name & Title */}
+          <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold mb-4">Aaron Kim</h1>
             <h2 className="text-xl text-muted-foreground mb-4">
               Full Stack Developer
             </h2>
-            <p className="text-muted-foreground max-w-sm">
+            <p className="text-muted-foreground max-w-sm mx-auto lg:mx-0">
               Need to add brief title
             </p>
           </div>
-
-          <nav className="space-y-4">
-            {sections.map((section) => (
-              <button
-                key={section.id}
-                onClick={() => scrollToSection(section.id)}
-                className={`block text-left transition-colors ${
-                  activeSection === section.id
-                    ? "text-foreground font-medium"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                <div className="flex items-center space-x-4">
-                  <div
-                    className={`w-8 h-px transition-all ${
-                      activeSection === section.id
-                        ? "bg-foreground w-16"
-                        : "bg-muted-foreground"
-                    }`}
-                  />
-                  <span className="text-sm uppercase tracking-widest">
-                    {section.label}
-                  </span>
-                </div>
-              </button>
-            ))}
-          </nav>
         </div>
 
-        <div className="flex space-x-6">
+        {/* Navigation */}
+        <nav className="hidden lg:flex flex-col gap-6">
+          {sections.map((section) => (
+            <button
+              key={section.id}
+              onClick={() => scrollToSection(section.id)}
+              className={`block text-left transition-colors ${
+                activeSection === section.id
+                  ? "text-foreground font-medium"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
+              <div className="flex items-center gap-4">
+                <div
+                  className={`w-8 h-px transition-all ${
+                    activeSection === section.id
+                      ? "bg-foreground w-16"
+                      : "bg-muted-foreground"
+                  }`}
+                />
+                <span className="text-sm uppercase tracking-widest">
+                  {section.label}
+                </span>
+              </div>
+            </button>
+          ))}
+        </nav>
+
+        {/* Social Links */}
+        <div className="flex gap-6 justify-center lg:justify-start">
           <a
             href="https://github.com"
             className="text-muted-foreground hover:text-foreground transition-colors"
@@ -171,7 +187,7 @@ export default function Portfolio() {
         </div>
       </div>
 
-      <div className="ml-[50%] w-1/2 p-16 space-y-32">
+      <div className="w-full lg:w-1/2 p-8 lg:p-16 space-y-16 lg:space-y-32">
         <section id="about">
           <h3 className="text-sm uppercase tracking-widest text-muted-foreground mb-8 sticky top-0 bg-background py-4">
             About
@@ -192,7 +208,7 @@ export default function Portfolio() {
             {experiences.map((exp, index) => (
               <Card
                 key={index}
-                className="group hover:shadow-lg transition-shadow"
+                className="hover:shadow-lg transition-shadow"
               >
                 <CardHeader>
                   <div className="flex justify-between items-start">
@@ -234,7 +250,7 @@ export default function Portfolio() {
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="group hover:shadow-lg transition-shadow"
+                className="hover:shadow-lg transition-shadow"
               >
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-2">
