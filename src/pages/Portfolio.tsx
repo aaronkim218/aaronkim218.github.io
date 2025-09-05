@@ -5,8 +5,9 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card";
-import { Badge } from "../components/ui/badge";
-import { ExternalLink, Github, Linkedin, Mail } from "lucide-react";
+import { TechBadge } from "../components/TechBadge";
+import { ExternalLink, FileDown, Linkedin, Mail } from "lucide-react";
+import { SiGithub } from "@icons-pack/react-simple-icons";
 import { Link } from "react-router";
 import headshot from "../assets/headshot.png";
 
@@ -142,7 +143,7 @@ export default function Portfolio() {
             <button
               key={section.id}
               onClick={() => scrollToSection(section.id)}
-              className={`block text-left transition-colors ${
+              className={`block text-left transition-colors cursor-pointer ${
                 activeSection === section.id
                   ? "text-foreground font-medium"
                   : "text-muted-foreground hover:text-foreground"
@@ -167,22 +168,32 @@ export default function Portfolio() {
         {/* Social Links */}
         <div className="flex gap-6 justify-center lg:justify-start">
           <a
-            href="https://github.com"
+            href="https://github.com/aaronkim218"
+            target="_blank"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
-            <Github size={24} />
+            <SiGithub size={24} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/aaron-kim27"
+            target="_blank"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
             <Linkedin size={24} />
           </a>
           <a
-            href="mailto:aaron@example.com"
+            href="mailto:aaronkim2727@gmail.com"
             className="text-muted-foreground hover:text-foreground transition-colors"
           >
             <Mail size={24} />
+          </a>
+          <a
+            href="/resume.pdf"
+            download={"aaron_kim_resume.pdf"}
+            className="text-muted-foreground hover:text-foreground transition-colors flex gap-2"
+          >
+            <FileDown size={24} />
+            <span>Resume</span>
           </a>
         </div>
       </div>
@@ -223,14 +234,8 @@ export default function Portfolio() {
                     {exp.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {exp.technologies.map((tech, techIndex) => (
-                      <Badge
-                        key={techIndex}
-                        variant="secondary"
-                        className="text-xs"
-                      >
-                        {tech}
-                      </Badge>
+                    {exp.technologies.map((tech, index) => (
+                      <TechBadge key={index} tech={tech} />
                     ))}
                   </div>
                 </CardContent>
@@ -254,7 +259,7 @@ export default function Portfolio() {
                         href={project.github}
                         className="text-muted-foreground hover:text-foreground transition-colors"
                       >
-                        <Github size={16} />
+                        <SiGithub size={16} />
                       </a>
                       <a
                         href={project.demo}
@@ -270,14 +275,8 @@ export default function Portfolio() {
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge
-                        key={techIndex}
-                        variant="secondary"
-                        className="text-xs"
-                      >
-                        {tech}
-                      </Badge>
+                    {project.technologies.map((tech, index) => (
+                      <TechBadge key={index} tech={tech} />
                     ))}
                   </div>
                 </CardContent>
