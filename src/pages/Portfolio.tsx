@@ -22,49 +22,123 @@ export default function Portfolio() {
 
   const experiences = [
     {
-      title: "Job Title 1",
-      company: "Company Name 1",
-      period: "2024 — Present",
+      title: "Associate Software Engineer",
+      company: "Fidelity",
+      period: "Jan 2025 — Present",
       description: "Sample description for job 1.",
-      technologies: ["React", "TypeScript", "Node.js"],
+      technologies: [
+        "TypeScript",
+        "Angular",
+        "HTML",
+        "CSS",
+        "Node.js",
+        "NestJS",
+        "Express",
+        "Java",
+        "Spring",
+        "PostgreSQL",
+      ],
     },
     {
-      title: "Job Title 2",
-      company: "Company Name 2",
-      period: "2023 — 2024",
+      title: "Software Engineer",
+      company: "Platnm (Generate Product Development)",
+      period: "Sep — Dec 2024",
       description: "Sample description for job 2.",
-      technologies: ["JavaScript", "Python", "MongoDB"],
+      technologies: [
+        "Go",
+        "Fiber",
+        "PostgreSQL",
+        "TypeScript",
+        "React Native",
+        "HTML",
+        "CSS",
+      ],
     },
     {
-      title: "Job Title 3",
-      company: "Company Name 3",
-      period: "2022 — 2023",
+      title: "Software Engineering Co-op",
+      company: "Optum (UnitedHealth Group)",
+      period: "Jan — Jul 2024",
+      description: "Sample description for job 2.",
+      technologies: [
+        "Python",
+        "Jupyter Notebook",
+        "Flask",
+        "Google Cloud Platform",
+        "Docker",
+        "Jenkins",
+        "HTML",
+        "CSS",
+      ],
+    },
+    {
+      title: "Software Engineering Co-op",
+      company: "Voxeti (Generate Product Development)",
+      period: "Sep — Dec 2023",
+      description: "Sample description for job 2.",
+      technologies: ["Go", "Echo", "TypeScript", "React", "HTML", "CSS"],
+    },
+    {
+      title: "Software Engineering Co-op",
+      company: "Brooktec",
+      period: "May — Aug 2023",
       description: "Sample description for job 3.",
-      technologies: ["HTML", "CSS", "JavaScript"],
+      technologies: [
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "React",
+        "HTML",
+        "CSS",
+      ],
+    },
+    {
+      title: "Software Engineering Co-op",
+      company: "Optum (UnitedHealth Group)",
+      period: "Jul — Dec 2022",
+      description: "Sample description for job 3.",
+      technologies: ["Java", "Selenium", "Jenkins"],
     },
   ];
 
   const projects = [
     {
-      title: "Project 1",
+      title: "Go Chat",
       description: "Sample description for project 1.",
-      technologies: ["React", "TypeScript", "Node.js"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      period: "May - Aug 2025",
+      technologies: [
+        "Go",
+        "Fiber",
+        "PostgreSQL",
+        "TypeScript",
+        "React",
+        "Vite",
+      ],
+      github: "https://github.com/aaronkim218/go-chat",
+      demo: "https://go-chat-frontend-3glj.onrender.com",
     },
     {
-      title: "Project 2",
+      title: "Husky Connect",
       description: "Sample description for project 2.",
-      technologies: ["Next.js", "Tailwind CSS", "PostgreSQL"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      period: "Sep - Dec 2024",
+      technologies: [
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "React",
+        "Socket.io",
+        "HTML",
+        "CSS",
+      ],
+      github: "https://github.com/aaronkim218/husky-connect",
+      demo: "https://husky-connect.onrender.com/",
     },
     {
-      title: "Project 3",
+      title: "Eventsocket",
       description: "Sample description for project 3.",
-      technologies: ["Vue.js", "Express", "MongoDB"],
-      github: "https://github.com",
-      demo: "https://demo.com",
+      period: "Jul - Aug 2025",
+      technologies: ["Go"],
+      github: "https://github.com/aaronkim218/eventsocket",
     },
   ];
 
@@ -252,23 +326,34 @@ export default function Portfolio() {
             {projects.map((project, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-lg flex items-center gap-2">
-                    {project.title}
-                    <div className="flex gap-2">
-                      <a
-                        href={project.github}
-                        className="text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        <SiGithub size={16} />
-                      </a>
-                      <a
-                        href={project.demo}
-                        className="text-muted-foreground hover:text-foreground transition-colors"
-                      >
-                        <ExternalLink size={16} />
-                      </a>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <CardTitle className="text-lg flex items-center gap-2">
+                        {project.title}
+                        <div className="flex gap-2">
+                          <a
+                            href={project.github}
+                            className="text-muted-foreground hover:text-foreground transition-colors"
+                            target="_blank"
+                          >
+                            <SiGithub size={16} />
+                          </a>
+                          {project.demo && (
+                            <a
+                              href={project.demo}
+                              className="text-muted-foreground hover:text-foreground transition-colors"
+                              target="_blank"
+                            >
+                              <ExternalLink size={16} />
+                            </a>
+                          )}
+                        </div>
+                      </CardTitle>
                     </div>
-                  </CardTitle>
+                    <span className="text-sm text-muted-foreground">
+                      {project.period}
+                    </span>
+                  </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">

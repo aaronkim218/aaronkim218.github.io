@@ -11,9 +11,25 @@ import {
   SiNextdotjs,
   SiTailwindcss,
   SiPostgresql,
-  SiVuedotjs,
   SiExpress,
+  SiSpring,
+  SiAngular,
+  SiNestjs,
+  SiFlask,
+  SiDocker,
+  SiGooglecloud,
+  SiJenkins,
+  SiJupyter,
+  SiSelenium,
+  SiGo,
+  SiVite,
+  SiSocketdotio,
 } from "@icons-pack/react-simple-icons";
+import JavaSvg from "../assets/Java.svg?react";
+
+const JavaIcon = ({ size = 16 }: { size?: number }) => (
+  <JavaSvg width={size} height={size} />
+);
 
 const technologies: Record<
   string,
@@ -34,8 +50,28 @@ const technologies: Record<
     icon: SiTailwindcss,
   },
   PostgreSQL: { bg: "bg-[#336791]", text: "text-white", icon: SiPostgresql },
-  "Vue.js": { bg: "bg-[#4FC08D]", text: "text-white", icon: SiVuedotjs },
   Express: { bg: "bg-[#000000]", text: "text-white", icon: SiExpress },
+  Spring: { bg: "bg-[#6DB33F]", text: "text-white", icon: SiSpring },
+  Angular: { bg: "bg-[#0F0F11]", text: "text-white", icon: SiAngular },
+  Java: { bg: "bg-[#ED8B00]", text: "text-white", icon: JavaIcon },
+  NestJS: { bg: "bg-[#E0234E]", text: "text-white", icon: SiNestjs },
+  Flask: { bg: "bg-[#3BABC3]", text: "text-white", icon: SiFlask },
+  Docker: { bg: "bg-[#2496ED]", text: "text-white", icon: SiDocker },
+  "Google Cloud Platform": {
+    bg: "bg-[#4285F4]",
+    text: "text-white",
+    icon: SiGooglecloud,
+  },
+  Jenkins: { bg: "bg-[#D24939]", text: "text-white", icon: SiJenkins },
+  "Jupyter Notebook": {
+    bg: "bg-[#F37626]",
+    text: "text-white",
+    icon: SiJupyter,
+  },
+  Selenium: { bg: "bg-[#43B02A]", text: "text-white", icon: SiSelenium },
+  Go: { bg: "bg-[#00ADD8]", text: "text-white", icon: SiGo },
+  Vite: { bg: "bg-[#646CFF]", text: "text-white", icon: SiVite },
+  "Socket.io": { bg: "bg-[#010101]", text: "text-white", icon: SiSocketdotio },
 };
 
 interface TechBadgeProps {
