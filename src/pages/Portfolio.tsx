@@ -25,7 +25,8 @@ export default function Portfolio() {
       title: "Associate Software Engineer",
       company: "Fidelity",
       period: "Jan 2025 — Present",
-      description: "Sample description for job 1.",
+      description:
+        "Designed and developed a RESTful microservice that served 30K+ requests per hour using Java, Spring, and PostgreSQL. On another team, I built a full-stack application using TypeScript, Angular, Node.js, NestJS, and Express in an Nx workspace.",
       technologies: [
         "TypeScript",
         "Angular",
@@ -43,7 +44,8 @@ export default function Portfolio() {
       title: "Software Engineer",
       company: "Platnm (Generate Product Development)",
       period: "Sep — Dec 2024",
-      description: "Sample description for job 2.",
+      description:
+        "Built a full-stack mobile app with a Go + Fiber backend and a TypeScript + React Native frontend.",
       technologies: [
         "Go",
         "Fiber",
@@ -54,12 +56,14 @@ export default function Portfolio() {
         "HTML",
         "CSS",
       ],
+      github: "https://github.com/GenerateNU/platnm",
     },
     {
       title: "Software Engineering Co-op",
       company: "Optum (UnitedHealth Group)",
       period: "Jan — Jul 2024",
-      description: "Sample description for job 2.",
+      description:
+        "Did a lot of miscellaneous work supporting an effort to build a robust and scalable system for testing a generative AI application. This included experimenting in Jupyter Notebook with the RAGAs library, training a classification model using TensorFlow, building a Python + Flask app that calculates metrics on the generative AI application's responses, and leveraging Google Cloud Platform to scale the evaluation system.",
       technologies: [
         "Python",
         "Jupyter Notebook",
@@ -72,17 +76,20 @@ export default function Portfolio() {
       ],
     },
     {
-      title: "Software Engineering Co-op",
+      title: "Software Engineer",
       company: "Voxeti (Generate Product Development)",
       period: "Sep — Dec 2023",
-      description: "Sample description for job 2.",
+      description:
+        "Built a full-stack web app with a Go + Echo backend and a TypeScript + React frontend.",
       technologies: ["Go", "Echo", "TypeScript", "React", "HTML", "CSS"],
+      github: "https://github.com/GenerateNU/voxeti",
     },
     {
       title: "Software Engineering Co-op",
       company: "Brooktec",
       period: "May — Aug 2023",
-      description: "Sample description for job 3.",
+      description:
+        "Built a full-stack web app with a Node.js + Express backend and a React frontend.",
       technologies: [
         "TypeScript",
         "Node.js",
@@ -96,7 +103,8 @@ export default function Portfolio() {
       title: "Software Engineering Co-op",
       company: "Optum (UnitedHealth Group)",
       period: "Jul — Dec 2022",
-      description: "Sample description for job 3.",
+      description:
+        "Built QA automation scripts using Java, Selenium, and Jenkins",
       technologies: ["Java", "Selenium", "Jenkins"],
     },
   ];
@@ -104,7 +112,8 @@ export default function Portfolio() {
   const projects = [
     {
       title: "Go Chat",
-      description: "Sample description for project 1.",
+      description:
+        "Built a real-time chat app. Backend built with Go + Fiber + Supabase. Frontend built with TypeScript + React. Realtime built with websockets and a custom library I built called Eventsocket that helps to manage websocket connections.",
       period: "May - Aug 2025",
       technologies: [
         "Go",
@@ -119,7 +128,8 @@ export default function Portfolio() {
     },
     {
       title: "Husky Connect",
-      description: "Sample description for project 2.",
+      description:
+        "Stack overflow clone. Backend built with TypeScript + Node.js + Express + MongoDB. Frontend built with TypeScript + React.",
       period: "Sep - Dec 2024",
       technologies: [
         "TypeScript",
@@ -136,7 +146,8 @@ export default function Portfolio() {
     },
     {
       title: "Eventsocket",
-      description: "Sample description for project 3.",
+      description:
+        "Library that handles the boilerplate code necessary for reading from and writing to long-lasting websocket connections. Also, reduces the boilerplate code for implementing a room-based architecture. Also, exposes lifecycle hooks to allow developers that consume the library to easily run code when specific lifecycle events occur. ",
       period: "Jul - Aug 2025",
       technologies: ["Go"],
       github: "https://github.com/aaronkim218/eventsocket",
@@ -204,10 +215,10 @@ export default function Portfolio() {
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold mb-4">Aaron Kim</h1>
             <h2 className="text-xl text-muted-foreground mb-4">
-              Full Stack Developer
+              Software Engineer
             </h2>
             <p className="text-muted-foreground max-w-sm mx-auto lg:mx-0">
-              Need to add brief title
+              Mostly full-stack, but I like to think I can do more
             </p>
           </div>
         </div>
@@ -279,9 +290,15 @@ export default function Portfolio() {
             About
           </h3>
           <div className="space-y-6 text-muted-foreground">
-            <p>Sample about section.</p>
-            <p>Need to add more details.</p>
-            <p>Need to add even more details.</p>
+            <p>Hi there, my name is Aaron.</p>
+            <p>
+              I am a passionate software engineer driven by curiosity and
+              discipline.
+            </p>
+            <p>
+              Please take a look at my site lol! And feel free to reach out to
+              any of my socials
+            </p>
             <Link to="/more">More</Link>
           </div>
         </section>
@@ -296,7 +313,18 @@ export default function Portfolio() {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-lg">{exp.title}</CardTitle>
+                      <CardTitle className="text-lg flex items-center gap-2">
+                        {exp.title}
+                        {exp.github && (
+                          <a
+                            href={exp.github}
+                            className="text-muted-foreground hover:text-foreground transition-colors"
+                            target="_blank"
+                          >
+                            <SiGithub size={16} />
+                          </a>
+                        )}
+                      </CardTitle>
                       <p className="text-muted-foreground">{exp.company}</p>
                     </div>
                     <span className="text-sm text-muted-foreground">
