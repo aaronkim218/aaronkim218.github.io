@@ -50,6 +50,7 @@ export default function Portfolio() {
         "PostgreSQL",
         "TypeScript",
         "React Native",
+        "Expo",
         "HTML",
         "CSS",
       ],

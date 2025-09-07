@@ -24,6 +24,7 @@ import {
   SiGo,
   SiVite,
   SiSocketdotio,
+  SiExpo,
 } from "@icons-pack/react-simple-icons";
 import JavaSvg from "../assets/Java.svg?react";
 
@@ -72,6 +73,7 @@ const technologies: Record<
   Go: { bg: "bg-[#00ADD8]", text: "text-white", icon: SiGo },
   Vite: { bg: "bg-[#646CFF]", text: "text-white", icon: SiVite },
   "Socket.io": { bg: "bg-[#010101]", text: "text-white", icon: SiSocketdotio },
+  Expo: { bg: "bg-[#1C2024]", text: "text-white", icon: SiExpo },
 };
 
 interface TechBadgeProps {
