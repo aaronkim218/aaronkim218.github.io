@@ -119,6 +119,7 @@ export default function Portfolio() {
         "Go",
         "Fiber",
         "PostgreSQL",
+        "Supabase",
         "TypeScript",
         "React",
         "Vite",
