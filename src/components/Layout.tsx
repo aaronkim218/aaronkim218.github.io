@@ -20,16 +20,16 @@ export default function Layout() {
             number: {
               value: 150,
             },
-            move: {
-              enable: true,
-              speed: 0.15,
-              direction: "none",
-              random: true,
-              straight: false,
-              outModes: {
-                default: "out",
-              },
-            },
+            // move: {
+            //   enable: true,
+            //   speed: 0.15,
+            //   direction: "none",
+            //   random: true,
+            //   straight: false,
+            //   outModes: {
+            //     default: "out",
+            //   },
+            // },
           },
         }}
         style={{
