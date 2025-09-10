@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   Card,
   CardContent,
@@ -7,6 +8,10 @@ import {
 import { Separator } from "../components/ui/separator";
 
 export default function Random() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div className="min-h-screen p-8 relative">
       <div className="max-w-4xl mx-auto space-y-8">
