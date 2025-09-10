@@ -11,7 +11,7 @@ import { loadStarsPreset } from "@tsparticles/preset-stars";
 import { ThemeProvider } from "./components/theme-provider";
 import Layout from "./components/Layout";
 import Portfolio from "./pages/Portfolio";
-import More from "./pages/More";
+import Random from "./pages/Random";
 import { Loader2 } from "lucide-react";
 
 function App() {
@@ -42,7 +42,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Portfolio />} />
-            <Route path="more" element={<More />} />
+            <Route path="random" element={<Random />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

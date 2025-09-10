@@ -26,7 +26,7 @@ export default function Portfolio() {
       company: "Fidelity",
       period: "Jan 2025 — Present",
       description:
-        "Designed and developed a RESTful microservice that served 30K+ requests per hour using Java, Spring, and PostgreSQL. On another team, I built a full-stack application using TypeScript, Angular, Node.js, NestJS, and Express in an Nx workspace.",
+        "Currently, I am building a full-stack web app that helps our phone reps stay compliant with legal policies during live calls with customers. This project integrates with many APIs across the firm and demands high performance to support real-time call scenarios. Our team is using TypeScript and Angular for the frontend, and Node.js, NestJS, and Express for the backend. In my previous project, I developed and optimized endpoints in a RESTful API with Java, Spring, and PostgreSQL. The endpoints I worked on made many database calls and I was able to reduce response time by batching queries and leveraging CompletableFutures for concurrent processing.",
       technologies: [
         "TypeScript",
         "Angular",
@@ -45,7 +45,7 @@ export default function Portfolio() {
       company: "Platnm (Generate Product Development)",
       period: "Sep — Dec 2024",
       description:
-        "Built a full-stack mobile app with a Go + Fiber backend and a TypeScript + React Native frontend.",
+        "Built a full-stack mobile app for reviewing and discussing music. It's essentially the Letterboxd for music. I worked on this project as a part of Generate Product Development, a Northeastern club that partners with 4-5 software clients each semester to prototype their business ideas. We developed the backend with Go and Fiber, and the frontend with TypeScript and React Native.",
       technologies: [
         "Go",
         "Fiber",
@@ -63,7 +63,7 @@ export default function Portfolio() {
       company: "Optum (UnitedHealth Group)",
       period: "Jan — Jul 2024",
       description:
-        "Did a lot of miscellaneous work supporting an effort to build a robust and scalable system for testing a generative AI application. This included experimenting in Jupyter Notebook with the RAGAs library, training a classification model using TensorFlow, building a Python + Flask app that calculates metrics on the generative AI application's responses, and leveraging Google Cloud Platform to scale the evaluation system.",
+        "Performed various development tasks supporting an effort to build a robust and scalable system for testing LLM responses generated from a RAG application. 1) Experimented in Jupyter Notebook with generating RAGAs metrics and traditional NLP metrics such as F1, precision, and recall on LLM responses. 2) Built a RESTful service with Python and Flask that calculates metrics given the question asked, LLM response, ground truth, and context retrieved by the RAG application. 3) Leveraged GCP Cloud Storage, BigQuery, and Pub/Sub to automate and scale the evaluation system. 4) Leveraged Jinja2 HTML templates and Bokeh plots to generate plots that visualize the calculated metrics and allow for easy interpretation. 5) Trained a binary classification model using TensorFlow and HuggingFace datasets.",
       technologies: [
         "Python",
         "Jupyter Notebook",
@@ -80,7 +80,7 @@ export default function Portfolio() {
       company: "Voxeti (Generate Product Development)",
       period: "Sep — Dec 2023",
       description:
-        "Built a full-stack web app with a Go + Echo backend and a TypeScript + React frontend.",
+        "Built a full-stack web app for monetizing and outsourcing 3D printing services as a part of Generate (which I discuss above). We developed the backend with Go and Echo, and the frontend with TypeScript and React.",
       technologies: ["Go", "Echo", "TypeScript", "React", "HTML", "CSS"],
       github: "https://github.com/GenerateNU/voxeti",
     },
@@ -89,7 +89,7 @@ export default function Portfolio() {
       company: "Brooktec",
       period: "May — Aug 2023",
       description:
-        "Built a full-stack web app with a Node.js + Express backend and a React frontend.",
+        "Built a full-stack web app that leverages OpenAI's API to generate user stories from meeting minutes. I developed the backend with Node.js and Express, and the frontend with TypeScript and React.",
       technologies: [
         "TypeScript",
         "Node.js",
@@ -104,7 +104,7 @@ export default function Portfolio() {
       company: "Optum (UnitedHealth Group)",
       period: "Jul — Dec 2022",
       description:
-        "Built QA automation scripts using Java, Selenium, and Jenkins",
+        "Developed QA automation scripts using Java, Selenium, and Jenkins",
       technologies: ["Java", "Selenium", "Jenkins"],
     },
   ];
@@ -113,7 +113,7 @@ export default function Portfolio() {
     {
       title: "Go Chat",
       description:
-        "Built a real-time chat app. Backend built with Go + Fiber + Supabase. Frontend built with TypeScript + React. Realtime built with websockets and a custom library I built called Eventsocket that helps to manage websocket connections.",
+        "A performant real-time chat app. I developed the backend with Go, Fiber, and Supabase, and the frontend with TypeScript and React. Realtime communication is facilitated through websockets and a custom library I built called Eventsocket (which I discuss down below) that helps to manage websocket connections.",
       period: "May - Aug 2025",
       technologies: [
         "Go",
@@ -130,7 +130,7 @@ export default function Portfolio() {
     {
       title: "Husky Connect",
       description:
-        "Stack overflow clone. Backend built with TypeScript + Node.js + Express + MongoDB. Frontend built with TypeScript + React.",
+        "A Stack Overflow clone. I developed the backend with TypeScript, Node.js, Express, and MongoDB, and the frontend with TypeScript and React.",
       period: "Sep - Dec 2024",
       technologies: [
         "TypeScript",
@@ -147,8 +147,7 @@ export default function Portfolio() {
     },
     {
       title: "Eventsocket",
-      description:
-        "Library that handles the boilerplate code necessary for reading from and writing to long-lasting websocket connections. Also, reduces the boilerplate code for implementing a room-based architecture. Also, exposes lifecycle hooks to allow developers that consume the library to easily run code when specific lifecycle events occur. ",
+      description: `A Go package that abstracts the management of long-lasting websocket connections in a room-based application, allowing developers to focus on application logic. The package also leverages the observer pattern to allow consumers of the library to register handlers for lifecycle events, which inspired the name "Eventsocket".`,
       period: "Jul - Aug 2025",
       technologies: ["Go"],
       github: "https://github.com/aaronkim218/eventsocket",
@@ -215,12 +214,12 @@ export default function Portfolio() {
           {/* Name & Title */}
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold mb-4">Aaron Kim</h1>
-            <h2 className="text-xl text-muted-foreground mb-4">
-              Software Engineer
+            <h2 className="text-xl text-muted-foreground">
+              Full-stack Software Engineer
             </h2>
-            <p className="text-muted-foreground max-w-sm mx-auto lg:mx-0">
+            {/* <p className="text-muted-foreground max-w-sm mx-auto lg:mx-0">
               Mostly full-stack, but I like to think I can do more
-            </p>
+            </p> */}
           </div>
         </div>
 
@@ -285,22 +284,51 @@ export default function Portfolio() {
         </div>
       </div>
 
-      <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col gap-16 lg:gap-32">
+      <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col gap-8 lg:gap-16">
         <section id="about">
           <h3 className="text-sm uppercase tracking-widest text-muted-foreground mb-8 sticky top-0 bg-background py-4">
             About
           </h3>
           <div className="space-y-6 text-muted-foreground">
-            <p>Hi there, my name is Aaron.</p>
+            <p>Hi there!</p>
             <p>
-              I am a passionate software engineer driven by curiosity and
-              discipline.
+              My name is Aaron. I'm a recent graduate from Northeastern
+              University with a B.S. in computer science and math. Currently,
+              I'm working full-time as a full-stack engineer at Fidelity
+              Investments.
             </p>
             <p>
-              Please take a look at my site lol! And feel free to reach out to
-              any of my socials
+              As a person, I like to think that I'm naturally driven by
+              curiosity and discipline. I find myself always trying to
+              understand the why behind things and going down rabbit holes in
+              search of an answer. I think this is also the reason why I'm so
+              passionate about software engineering. I love discovering new
+              technologies and tools, but more importantly, I love actually
+              committing to learning them through hands-on practice and real
+              application.
             </p>
-            <Link to="/more">More</Link>
+            <p>
+              Below, I showcase some of my relevant professional experience and
+              personal projects. For the personal projects, I purposely kept the
+              descriptions short. If you want to see the actual project in
+              action, please check out the production link. If you want to learn
+              more about the development process or the technical details,
+              please check out the Github repository where I talk in greater
+              depth.
+            </p>
+            <p>
+              Thanks for visiting my site! Feel free to reach out to any of my
+              socials.
+            </p>
+            <p>
+              You can also check out a page that I created where I talk about
+              random stuff and anything that interests me
+              <span className="ml-1">
+                <Link className="underline" to="/random">
+                  here!
+                </Link>
+              </span>
+            </p>
           </div>
         </section>
 
