@@ -66,7 +66,7 @@ export default function Random() {
                     you in the face. I'm definitely not describing that right,
                     but I love songs like this. One other song that comes to
                     mind where I feel like I'm "punched in the face" is{" "}
-                    <strong>"Trojan Horse"</strong> (Sebastian Paul). I highly
+                    <strong>"Key Of C"</strong> (Dylan Brady). I highly
                     recommend giving that a listen if you've never heard it
                     before.
                   </p>
@@ -99,7 +99,7 @@ export default function Random() {
                 />
                 <div className="prose prose-sm max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    A few weeks before the time of writing this (9/1), I
+                    A few weeks before the time of writing this (8/27), I
                     stumbled across the song "Born Slippy" on Spotify. To be
                     honest, it kind of gave me a headache when I heard it for
                     the first time, but Spotify decided to keep shuffling it
