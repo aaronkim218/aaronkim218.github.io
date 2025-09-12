@@ -55,20 +55,11 @@ export default function Random() {
                     I discovered George Clanton a week ago from the time of
                     writing this (9/9), but I have been listening to his music
                     nonstop since then. The song that got me hooked was{" "}
-                    <strong>"You Lost Me There"</strong>. I don't have a
-                    technical music background so I have trouble explaining my
-                    thoughts sometimes but I will try my best.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    The synths + drums + effects on his voice create so much
-                    emotion that makes it addicting to listen to. It's also a
-                    song where the beat comes in and it feels like it punches
-                    you in the face. I'm definitely not describing that right,
-                    but I love songs like this. One other song that comes to
-                    mind where I feel like I'm "punched in the face" is{" "}
-                    <strong>"Key Of C"</strong> (Dylan Brady). I highly
-                    recommend giving that a listen if you've never heard it
-                    before.
+                    <strong>"You Lost Me There"</strong>. The synths + drums +
+                    effects on his voice create so much emotion that makes it
+                    addicting to listen to. Some of my other favorite songs by
+                    him are <strong>"Walk Slowly"</strong>,{" "}
+                    <strong>"Bleed"</strong>, and <strong>"Warmpop"</strong>.
                   </p>
                 </div>
               </CardContent>
