@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { Link } from "react-router";
+import { ArrowLeft } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -15,6 +17,14 @@ export default function Random() {
   return (
     <div className="min-h-screen p-8 relative">
       <div className="max-w-4xl mx-auto space-y-8">
+        <Link
+          to="/"
+          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group mb-4"
+        >
+          <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
+          <span className="text-sm">Back to portfolio</span>
+        </Link>
+
         <div className="text-center">
           <h1 className="text-4xl mb-4">Beyond code</h1>
         </div>
