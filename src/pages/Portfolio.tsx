@@ -42,7 +42,7 @@ export default function Portfolio() {
     },
     {
       title: "Software Engineer",
-      company: "Platnm (Generate Product Development)",
+      company: "Platnm (Northeastern Generate Product Development)",
       period: "Sep — Dec 2024",
       description:
         "Built a full-stack mobile app for reviewing and discussing music. It's essentially the Letterboxd for music. I worked on this project as a part of Generate Product Development, a Northeastern club that partners with 4-5 software clients each semester to prototype their business ideas. We developed the backend with Go and Fiber, and the frontend with TypeScript and React Native.",
@@ -77,7 +77,7 @@ export default function Portfolio() {
     },
     {
       title: "Software Engineer",
-      company: "Voxeti (Generate Product Development)",
+      company: "Voxeti (Northeastern Generate Product Development)",
       period: "Sep — Dec 2023",
       description:
         "Built a full-stack web app for monetizing and outsourcing 3D printing services as a part of Generate (which I discuss above). We developed the backend with Go and Echo, and the frontend with TypeScript and React.",
