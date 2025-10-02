@@ -21,7 +21,10 @@ export default function Random() {
           to="/"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors group mb-4"
         >
-          <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
+          <ArrowLeft
+            size={16}
+            className="group-hover:-translate-x-1 transition-transform"
+          />
           <span className="text-sm">Back to portfolio</span>
         </Link>
 
@@ -43,14 +46,14 @@ export default function Random() {
                 <CardTitle className="flex items-center justify-between">
                   <span className="text-xl">Currently on repeat</span>
                   <span className="text-sm text-muted-foreground font-normal">
-                    September 2024
+                    October 2025
                   </span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <iframe
                   title="deezer-widget-current"
-                  src="https://widget.deezer.com/widget/dark/track/642837342"
+                  src="https://widget.deezer.com/widget/dark/track/3315735991"
                   width="100%"
                   height="300"
                   {...({
@@ -62,14 +65,7 @@ export default function Random() {
                 ></iframe>
                 <div className="prose prose-sm max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    I discovered George Clanton a week ago from the time of
-                    writing this (9/9), but I have been listening to his music
-                    nonstop since then. The song that got me hooked was{" "}
-                    <strong>"You Lost Me There"</strong>. The synths + drums +
-                    effects on his voice create so much emotion that makes it
-                    addicting to listen to. Some of my other favorite songs by
-                    him are <strong>"Walk Slowly"</strong>,{" "}
-                    <strong>"Bleed"</strong>, and <strong>"Warmpop"</strong>.
+                    Ethereal sound that is absolutely addicting.
                   </p>
                 </div>
               </CardContent>
@@ -81,14 +77,14 @@ export default function Random() {
                 <CardTitle className="flex items-center justify-between">
                   <span className="text-xl">Previously on repeat</span>
                   <span className="text-sm text-muted-foreground font-normal">
-                    August 2024
+                    September 2025
                   </span>
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <iframe
                   title="deezer-widget-previous"
-                  src="https://widget.deezer.com/widget/dark/track/82265248"
+                  src="https://widget.deezer.com/widget/dark/track/642837342"
                   width="100%"
                   height="300"
                   {...({
@@ -100,21 +96,14 @@ export default function Random() {
                 />
                 <div className="prose prose-sm max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    A few weeks before the time of writing this (8/27), I
-                    stumbled across the song "Born Slippy" on Spotify. To be
-                    honest, it kind of gave me a headache when I heard it for
-                    the first time, but Spotify decided to keep shuffling it
-                    into my playlists so I ended up listening to it more and
-                    more and after a while I became hooked. This spurred a three
-                    week phase where I only listened to Underworld.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    One of the things I love most about them is that even though
-                    most of their music is from the 90's, it still sounds fresh
-                    today. Some of my other favorite songs by them are{" "}
-                    <strong>"Cowgirl"</strong>,{" "}
-                    <strong>"Shudder / King Of Snake"</strong>, and{" "}
-                    <strong>"Sola Sistim"</strong>.
+                    I discovered George Clanton a week ago from the time of
+                    writing this (9/9), but I have been listening to his music
+                    nonstop since then. The song that got me hooked was{" "}
+                    <strong>"You Lost Me There"</strong>. The synths + drums +
+                    effects on his voice create so much emotion that makes it
+                    addicting to listen to. Some of my other favorite songs by
+                    him are <strong>"Walk Slowly"</strong>,{" "}
+                    <strong>"Bleed"</strong>, and <strong>"Warmpop"</strong>.
                   </p>
                 </div>
               </CardContent>
