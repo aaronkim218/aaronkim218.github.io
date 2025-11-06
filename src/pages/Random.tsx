@@ -46,6 +46,36 @@ export default function Random() {
                 <CardTitle className="flex items-center justify-between">
                   <span className="text-xl">Currently on repeat</span>
                   <span className="text-sm text-muted-foreground font-normal">
+                    November 2025
+                  </span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <iframe
+                  title="deezer-widget"
+                  src="https://widget.deezer.com/widget/dark/track/3017277861"
+                  width="100%"
+                  height="300"
+                  {...({
+                    frameborder: "0",
+                    allowtransparency: "true",
+                  } as any)}
+                  allow="encrypted-media; clipboard-write"
+                ></iframe>
+                <div className="prose prose-sm max-w-none">
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    🔥 song on the GOAT album.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Previously on repeat */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  <span className="text-xl">Currently on repeat</span>
+                  <span className="text-sm text-muted-foreground font-normal">
                     October 2025
                   </span>
                 </CardTitle>
@@ -66,44 +96,6 @@ export default function Random() {
                 <div className="prose prose-sm max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     Ethereal sound that is absolutely addicting.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Previously on repeat */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center justify-between">
-                  <span className="text-xl">Previously on repeat</span>
-                  <span className="text-sm text-muted-foreground font-normal">
-                    September 2025
-                  </span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <iframe
-                  title="deezer-widget-previous"
-                  src="https://widget.deezer.com/widget/dark/track/642837342"
-                  width="100%"
-                  height="300"
-                  {...({
-                    frameborder: "0",
-                    allowtransparency: "true",
-                  } as any)}
-                  allow="encrypted-media; clipboard-write"
-                  className="rounded-lg"
-                />
-                <div className="prose prose-sm max-w-none">
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    I discovered George Clanton a week ago from the time of
-                    writing this (9/9), but I have been listening to his music
-                    nonstop since then. The song that got me hooked was{" "}
-                    <strong>"You Lost Me There"</strong>. The synths + drums +
-                    effects on his voice create so much emotion that makes it
-                    addicting to listen to. Some of my other favorite songs by
-                    him are <strong>"Walk Slowly"</strong>,{" "}
-                    <strong>"Bleed"</strong>, and <strong>"Warmpop"</strong>.
                   </p>
                 </div>
               </CardContent>
