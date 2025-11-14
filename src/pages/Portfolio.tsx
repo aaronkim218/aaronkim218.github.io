@@ -294,8 +294,7 @@ export default function Portfolio() {
             <p>
               My name is Aaron. I'm a recent graduate from Northeastern
               University with a B.S. in computer science and math. Currently,
-              I'm working full-time as a full-stack engineer at Fidelity
-              Investments.
+              I'm working as a full-stack engineer at Fidelity Investments.
             </p>
             <p>
               As a person, I like to think that I'm naturally driven by
@@ -311,7 +310,7 @@ export default function Portfolio() {
               Below, I showcase some of my relevant professional experience and
               personal projects. For the personal projects, I purposely kept the
               descriptions short. If you want to see the actual project in
-              action, please check out the production link. If you want to learn
+              action, please check out the actual link. If you want to learn
               more about the development process or the technical details,
               please check out the Github repository where I talk in greater
               depth.
