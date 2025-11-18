@@ -51,6 +51,35 @@ export default function Random() {
               <CardContent className="space-y-4">
                 <iframe
                   title="deezer-widget"
+                  src="https://widget.deezer.com/widget/dark/track/1255932992"
+                  width="100%"
+                  height="300"
+                  {...({
+                    frameborder: "0",
+                    allowtransparency: "true",
+                  } as any)}
+                  allow="encrypted-media; clipboard-write"
+                ></iframe>
+
+                <div className="prose prose-sm max-w-none">
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    I'm a TWICE stan now
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  <span className="text-sm text-muted-foreground font-normal">
+                    November 2025
+                  </span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <iframe
+                  title="deezer-widget"
                   src="https://widget.deezer.com/widget/dark/track/2854215502"
                   width="100%"
                   height="300"
