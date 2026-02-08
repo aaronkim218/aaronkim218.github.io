@@ -33,7 +33,7 @@ export default function Portfolio() {
       company: "Fidelity Investments",
       period: "Jan 2025 — Dec 2025",
       description:
-        "Currently, I am building a full-stack web app that helps our phone reps stay compliant with legal policies during live calls with customers. This project integrates with many APIs across the firm and demands high performance to support real-time call scenarios. Our team is using TypeScript and Angular for the frontend, and Node.js, NestJS, and Express for the backend. In my previous project, I developed and optimized endpoints in a RESTful API with Java, Spring, and PostgreSQL. The endpoints I worked on made many database calls and I was able to reduce response time by batching queries and leveraging CompletableFutures for concurrent processing.",
+        "Currently, I am building a full-stack web app that helps our phone reps stay compliant with legal policies during live calls with customers. This project integrates with many APIs across the firm and demands high performance to support real-time call scenarios. Our team is using TypeScript and Angular for the frontend, and Node.js, NestJS, and Express for the backend. In my previous project, I developed and optimized endpoints in a RESTful API with Java, Spring, and PostgreSQL.",
       technologies: [
         "TypeScript",
         "Angular",
