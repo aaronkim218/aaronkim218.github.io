@@ -26,6 +26,8 @@ import {
   SiSocketdotio,
   SiExpo,
   SiSupabase,
+  SiKotlin,
+  SiAndroid,
 } from "@icons-pack/react-simple-icons";
 import JavaSvg from "../assets/Java.svg?react";
 
@@ -76,6 +78,8 @@ const technologies: Record<
   "Socket.io": { bg: "bg-[#010101]", text: "text-white", icon: SiSocketdotio },
   Expo: { bg: "bg-[#1C2024]", text: "text-white", icon: SiExpo },
   Supabase: { bg: "bg-[#3FCF8E]", text: "text-black", icon: SiSupabase },
+  Kotlin: { bg: "bg-[#7F52FF]", text: "text-white", icon: SiKotlin },
+  Android: { bg: "bg-[#3DDC84]", text: "text-white", icon: SiAndroid },
 };
 
 interface TechBadgeProps {

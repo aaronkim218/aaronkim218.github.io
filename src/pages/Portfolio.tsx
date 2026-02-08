@@ -22,9 +22,16 @@ export default function Portfolio() {
 
   const experiences = [
     {
+      title: "Software Engineer",
+      company: "Snap Inc.",
+      period: "Jan 2026 — Present",
+      description: "Video playback for Android",
+      technologies: ["Kotlin", "Java", "Android"],
+    },
+    {
       title: "Associate Software Engineer",
-      company: "Fidelity",
-      period: "Jan 2025 — Present",
+      company: "Fidelity Investments",
+      period: "Jan 2025 — Dec 2025",
       description:
         "Currently, I am building a full-stack web app that helps our phone reps stay compliant with legal policies during live calls with customers. This project integrates with many APIs across the firm and demands high performance to support real-time call scenarios. Our team is using TypeScript and Angular for the frontend, and Node.js, NestJS, and Express for the backend. In my previous project, I developed and optimized endpoints in a RESTful API with Java, Spring, and PostgreSQL. The endpoints I worked on made many database calls and I was able to reduce response time by batching queries and leveraging CompletableFutures for concurrent processing.",
       technologies: [
@@ -214,9 +221,7 @@ export default function Portfolio() {
           {/* Name & Title */}
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold mb-4">Aaron Kim</h1>
-            <h2 className="text-xl text-muted-foreground">
-              Full-stack Software Engineer
-            </h2>
+            <h2 className="text-xl text-muted-foreground">Software Engineer</h2>
             {/* <p className="text-muted-foreground max-w-sm mx-auto lg:mx-0">
               Mostly full-stack, but I like to think I can do more
             </p> */}
@@ -294,34 +299,16 @@ export default function Portfolio() {
             <p>
               My name is Aaron. I'm a recent graduate from Northeastern
               University with a B.S. in computer science and math. Currently,
-              I'm working as a full-stack engineer at Fidelity Investments.
-            </p>
-            <p>
-              As a person, I like to think that I'm naturally driven by
-              curiosity and discipline. I find myself always trying to
-              understand the why behind things and going down rabbit holes in
-              search of an answer. I think this is also the reason why I'm so
-              passionate about software engineering. I love discovering new
-              technologies and tools, but more importantly, I love actually
-              committing to learning them through hands-on practice and real
-              application.
-            </p>
-            <p>
-              Below, I showcase some of my relevant professional experience and
-              personal projects. For the personal projects, I purposely kept the
-              descriptions short. If you want to see the actual project in
-              action, please check out the actual link. If you want to learn
-              more about the development process or the technical details,
-              please check out the Github repository where I talk in greater
-              depth.
+              I'm working as a software engineer for Snap Inc. doing video
+              playback for Android.
             </p>
             <p>
               Thanks for visiting my site! Feel free to reach out to any of my
               socials.
             </p>
             <p>
-              You can also check out a page that I created where I talk about
-              random stuff and anything that interests me
+              You can also check out another page where I talk about random
+              stuff and anything that interests me
               <span className="ml-1">
                 <Link className="underline" to="/random">
                   here!

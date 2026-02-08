@@ -44,6 +44,35 @@ export default function Random() {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between">
                   <span className="text-sm text-muted-foreground font-normal">
+                    February 2026
+                  </span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <iframe
+                  title="deezer-widget"
+                  src="https://widget.deezer.com/widget/dark/track/1375201342"
+                  width="100%"
+                  height="300"
+                  {...({
+                    frameborder: "0",
+                    allowtransparency: "true",
+                  } as any)}
+                  allow="encrypted-media; clipboard-write"
+                ></iframe>
+
+                <div className="prose prose-sm max-w-none">
+                  <p className="text-muted-foreground leading-relaxed mb-4">
+                    All roads lead back (and forth) to Sebastian Paul
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center justify-between">
+                  <span className="text-sm text-muted-foreground font-normal">
                     November 2025
                   </span>
                 </CardTitle>
@@ -93,7 +122,7 @@ export default function Random() {
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     Beautiful ambient + jazz fusion. Discovered this song
                     through an Uber ride lol. Driver ended up being a Berklee
-                    student so it made sense.
+                    student so it made sense
                   </p>
                 </div>
               </CardContent>
@@ -121,7 +150,7 @@ export default function Random() {
                 ></iframe>
                 <div className="prose prose-sm max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    2nd favorite song on the GOAT album.
+                    2nd favorite song on the GOAT album
                   </p>
                 </div>
               </CardContent>
@@ -150,7 +179,7 @@ export default function Random() {
                 ></iframe>
                 <div className="prose prose-sm max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Ethereal sound that is absolutely addicting.
+                    Incredible.
                   </p>
                 </div>
               </CardContent>
