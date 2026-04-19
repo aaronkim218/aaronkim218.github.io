@@ -9,7 +9,7 @@ import { TechBadge } from "../components/TechBadge";
 import { ExternalLink, FileDown, Linkedin, Mail } from "lucide-react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { Link } from "react-router";
-import headshot from "../assets/headshot.png";
+import headshot from "../assets/headshot.JPG";
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("about");
