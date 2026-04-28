@@ -24,7 +24,7 @@ export default function Portfolio() {
     {
       title: "Software Engineer",
       company: "Snap Inc.",
-      period: "Jan 2026 — Present",
+      period: "Jan 2026 — Apr 2026",
       description: "Video playback for Android",
       technologies: ["Kotlin", "Java", "Android"],
     },
@@ -33,7 +33,7 @@ export default function Portfolio() {
       company: "Fidelity Investments",
       period: "Jan 2025 — Dec 2025",
       description:
-        "Currently, I am building a full-stack web app that helps our phone reps stay compliant with legal policies during live calls with customers. This project integrates with many APIs across the firm and demands high performance to support real-time call scenarios. Our team is using TypeScript and Angular for the frontend, and Node.js, NestJS, and Express for the backend. In my previous project, I developed and optimized endpoints in a RESTful API with Java, Spring, and PostgreSQL.",
+        "Built and maintained a full-stack web app that helps phone reps stay compliant with legal policies during live calls with customers. This project integrates with many APIs across the firm and demands high performance to support real-time call scenarios. Our team used TypeScript and Angular for the frontend, and Node.js, NestJS, and Express for the backend. In my previous team, I developed and optimized Java, Spring, and PostgreSQL endpoints. Our team owned agent profile data and exposed APIs that were consumed by teams across the org.",
       technologies: [
         "TypeScript",
         "Angular",
