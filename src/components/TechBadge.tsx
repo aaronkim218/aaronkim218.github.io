@@ -28,6 +28,7 @@ import {
   SiSupabase,
   SiKotlin,
   SiAndroid,
+  SiApachekafka,
 } from "@icons-pack/react-simple-icons";
 import JavaSvg from "../assets/Java.svg?react";
 
@@ -80,6 +81,7 @@ const technologies: Record<
   Supabase: { bg: "bg-[#3FCF8E]", text: "text-black", icon: SiSupabase },
   Kotlin: { bg: "bg-[#7F52FF]", text: "text-white", icon: SiKotlin },
   Android: { bg: "bg-[#3DDC84]", text: "text-white", icon: SiAndroid },
+  Kafka: { bg: "bg-[#231F20]", text: "text-white", icon: SiApachekafka },
 };
 
 interface TechBadgeProps {

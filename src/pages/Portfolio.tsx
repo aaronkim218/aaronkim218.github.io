@@ -118,6 +118,24 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "Leetgame",
+      description:
+        "An LLM-powered LeetCode interview prep app where users verbally walk through problems with an AI tutor. I developed the backend with Go, Fiber, and PostgreSQL, and the frontend with TypeScript and React. The backend features SSE-streamed LLM responses and a Kafka event-driven evaluation pipeline that asynchronously scores sessions and writes proficiency records to Postgres.",
+      period: "May 2026 - Present",
+      technologies: [
+        "Go",
+        "Fiber",
+        "PostgreSQL",
+        "TypeScript",
+        "React",
+        "Vite",
+        "Supabase",
+        "Kafka",
+      ],
+      github: "https://github.com/aaronkim218/leetgame",
+      demo: "https://leetgame-frontend.onrender.com/",
+    },
+    {
       title: "Go Chat",
       description:
         "A performant real-time chat app. I developed the backend with Go, Fiber, and Supabase, and the frontend with TypeScript and React. Realtime communication is facilitated through websockets and a custom library I built called Eventsocket (which I discuss down below) that helps to manage websocket connections.",
