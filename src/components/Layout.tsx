@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 import Particles from "@tsparticles/react";
 
 export default function Layout() {
